@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300&display=swap');
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 120px;
+}
+
+.articleTitle{
+    margin: 30px 30px 10px 30px; 
+    padding: 20px;
+}
+
+.articleTitle h1{
+    font-family:'Poppins';
+    color: rgb(2, 112, 134);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.articleImage{
+    margin: 10px 30px 10px 30px; 
+}
+.articleImage img{
+    width: 1050px;
+}
+
+.articleSubtitle{
+    margin: 10px 30px 10px 30px; 
+    padding: 20px;
+}
+
+.articleSubtitle p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.articleFooter{
+    padding: 20px;   
+}
+
+.articleButton{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    width: 250px;
+    color: whitesmoke;
+    background-color: #05aff2;
+    margin: 20px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+    border: 0;
+    border-radius: 8px;
+}
+
+.articleButton:hover {
+    background-color: #f2811d;
+    box-shadow: 10px 10px 30px -5px rgba(202, 100, 3, 0.75);
+    color: black;
+}
+
+.articleBody{
+    margin: 10px 30px 10px 30px; 
+    padding: 20px;
+}
+
+.articleBody p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+}

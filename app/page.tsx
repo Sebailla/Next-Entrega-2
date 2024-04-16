@@ -1,12 +1,13 @@
 import api from '@/api'
 import Card from './components/card'
+import './page.css'
 
 export default async function MainPage() {
   const notices = await api.list()
   
   return (
 
-    <section>
+    <div className='mainContainer'>
       {
         notices.map(notice => {
           return (
@@ -14,7 +15,7 @@ export default async function MainPage() {
           )
         })
       }
-    </section>
+    </div>
 
 
   )

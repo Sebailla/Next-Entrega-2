@@ -1,5 +1,5 @@
 import api from '@/api'
-import Card from '../components/card'
+import Article from '../components/article'
 
 
 export default async function NoticePage({ params: { id } }: { params: { id: string } }) {
@@ -7,7 +7,7 @@ export default async function NoticePage({ params: { id } }: { params: { id: str
 
     return (
         <>
-            <Card id={notice.id} title={notice.title} subTitle={notice.subTitle} image={notice.image}/>
+            <Article id={notice.id} title={notice.title} subTitle={notice.subTitle} image={notice.image}/>
         </>
 
     )

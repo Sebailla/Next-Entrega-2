@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,16 +18,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+
       <body >
 
-        <header >Aqualife</header>
+        <header >
+          <div>
+            <Link href={'/'}>
+              <img src="./favicon.svg" alt="logo" className="logo" />
+            </Link>
+          </div>
+          <div className="headerTitle">
+            Aqualife
+          </div>
+        </header>
 
-        <main >{children}</main>
+        <main>{children}</main>
 
         <footer >
-          © {new Date().getFullYear()} Aqualife
+          <div className="copyright">
+            © {new Date().getFullYear()} - Aqualife
+          </div>
         </footer>
-        
+
       </body>
     </html>
   )
